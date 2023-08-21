@@ -4,5 +4,4 @@ module "vpc" {
   env = var.env
   subnets = each.value["subnets"]
   cidr_block = each.value["cidr_block"]
-  tags = local.tags
 }
